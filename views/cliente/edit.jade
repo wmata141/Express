@@ -1,0 +1,28 @@
+html
+  head
+    title Express
+  body
+    h1 Cliente Edit     
+    form(method="post", action="/cliente/edit")
+      table
+        tr
+          th Cedula
+          td 
+            input(type="text", name="cedula", value=cliente.cedula)
+            input(type="hidden", name="id_cliente",value=cliente.id_cliente)
+        tr  
+          th Nombre
+          td 
+            input(type="text", name="nombre", value=cliente.nombre)      
+        tr  
+          th Apellido
+          td 
+            input(type="text", name="apellido", value=cliente.apellido)
+        tr  
+          th Edad
+          td 
+            input(type="text", name="edad", value=cliente.edad)
+        tr
+          th
+          td 
+            input(type="submit", value="Save")    
